@@ -3,9 +3,9 @@ const braintree = require("braintree");
 
 const gateway = new braintree.BraintreeGateway({
     environment: braintree.Environment.Sandbox,
-    merchantId: "ggcpcj7nyhhwpkqg",
-    publicKey: "gk7p77gpggw532k6",
-    privateKey: "f3f5033a235b0a27cd39e06f6ee84cfa"
+    merchantId: "bqdngqjb5r9wb68j",
+    publicKey: "tgfw2gybbz2jp5tq",
+    privateKey: "0c29db72bec767df6999caa09de20063"
 });
 var router = express.Router();
 
