@@ -12,7 +12,7 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/client_token', function(req, res, next) {
     gateway.clientToken.generate({}, (err, response) => {
-        res.send(response.clientToken);
+        res.send("{\"client_token\":\"" + response.clientToken + "\"}");
       });
 });
 
