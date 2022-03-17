@@ -24,7 +24,6 @@ router.get('/checkout', function(req, res, next) {
     gateway.transaction.sale({
         amount: "10.00",
         paymentMethodNonce: nonceFromTheClient,
-        deviceData: deviceDataFromTheClient,
         options: {
           submitForSettlement: true
         }
