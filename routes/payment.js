@@ -45,7 +45,8 @@ router.post('/checkout', function (req, res, next) {
         if (result.success) {
             res.send(JSON.stringify(result));
         } else {
-            res.send(JSON.stringify("{message: " + "error occured" + err + "}"));
+            // res.send("{message: " + "error occured" + err + "}");
+            res.send("{\"message\":\"" + err + "\"}");
         }
 
     });
