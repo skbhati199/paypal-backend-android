@@ -35,10 +35,10 @@ router.post('/checkout', function (req, res, next) {
 
     gateway.transaction.sale({
         amount: "10.00",
-        merchantAccountId: merchantAccountId,
+        // merchantAccountId: merchantAccountId,
         paymentMethodNonce: nonceFromTheClient,
         options: {
-            threeDSecure: threeDSecureObj,
+            // threeDSecure: threeDSecureObj,
             submitForSettlement: true
         }
     }, (err, result) => {
