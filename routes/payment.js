@@ -18,7 +18,7 @@ router.get('/client_token', function (req, res, next) {
 
 
 /* GET users listing. */
-router.get('/checkout', function (req, res, next) {
+router.post('/checkout', function (req, res, next) {
     const nonceFromTheClient = req.body.payment_method_nonce;
     const merchantAccountId = req.body.merchantAccountId;
     const requireThreeDSecure = req.body.requireThreeDSecure;
